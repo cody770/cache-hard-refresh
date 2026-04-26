@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Cache Clear & Hard Refresh",
+  "version": "1.4",
+  "description": "Toolbar button: clears all site data (storage, caches, service workers, IndexedDB, cookies including HttpOnly) for the current site, hard-reloads the tab, and shows a toast with what was cleared.",
+  "permissions": ["activeTab", "scripting", "cookies"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "action": {
+    "default_title": "Clear site data & hard refresh",
+    "default_icon": {
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png",
+      "128": "icons/icon-128.png",
+      "256": "icons/icon-256.png",
+      "512": "icons/icon-512.png"
+    }
+  },
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png",
+    "256": "icons/icon-256.png",
+    "512": "icons/icon-512.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="../Style.css">
+    <script src="../Script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="../Icon.png" width="64" height="64" alt="Cache Hard Refresh icon">
+        <h1>Cache Clear &amp; Hard Refresh</h1>
+        <p class="tagline">Two quick steps to set this up.</p>
+    </header>
+
+    <ol class="setup">
+        <li class="step step-1">
+            <div class="step-head">
+                <span class="step-num"><span class="num">1</span><span class="check">✓</span></span>
+                <span class="step-title">Enable the extension</span>
+            </div>
+            <p class="step-body">
+                Open Safari's Extensions settings, find <em>Cache Clear &amp; Hard Refresh</em>, and turn it on.
+            </p>
+            <button class="open-preferences btn-primary">Open Safari Settings…</button>
+            <p class="step-hint state-on">Done. The extension is enabled.</p>
+        </li>
+
+        <li class="step step-2">
+            <div class="step-head">
+                <span class="step-num"><span class="num">2</span></span>
+                <span class="step-title">Allow access on all websites</span>
+            </div>
+            <p class="step-body">
+                In the same Extensions settings, with <em>Cache Clear &amp; Hard Refresh</em> selected on the left, change <strong>Website Access</strong> on the right from <em>Specific Websites</em> to <strong>All Websites</strong>.
+            </p>
+            <p class="step-body subtle">
+                This is required because Safari's cookies API can't be limited to a single site at the manifest level — it's all-or-nothing. The extension still only ever acts on the tab whose toolbar button you've clicked. <a href="https://example.com/cache-hard-refresh" data-external>View source</a> to verify.
+            </p>
+            <button class="open-preferences btn-secondary">Re-open Safari Settings…</button>
+        </li>
+
+        <li class="step step-3">
+            <div class="step-head">
+                <span class="step-num"><span class="num">3</span></span>
+                <span class="step-title">Try it</span>
+            </div>
+            <p class="step-body">
+                Visit any site and click the <em>Cache Clear &amp; Hard Refresh</em> button in Safari's toolbar. A toast will appear listing what was cleared (storage, caches, service workers, IndexedDB, cookies).
+            </p>
+        </li>
+    </ol>
+
+    <section class="info">
+        <details>
+            <summary>What data does this collect?</summary>
+            <p><strong>None.</strong> No analytics, no telemetry, no crash reports, no network requests. Nothing leaves your machine. The extension has no servers and never makes a network call of its own.</p>
+        </details>
+
+        <details>
+            <summary>What does it actually access?</summary>
+            <p>Only the active tab, only when you click the toolbar button. The "all websites" permission Safari requires is a platform constraint — the cookies API doesn't accept per-site scoping at install time. The extension code never touches a tab you haven't explicitly clicked.</p>
+        </details>
+
+        <details>
+            <summary>Privacy policy &amp; source</summary>
+            <p>Privacy: <a href="https://example.com/cache-hard-refresh/privacy" data-external>example.com/cache-hard-refresh/privacy</a></p>
+            <p>Source: <a href="https://example.com/cache-hard-refresh" data-external>example.com/cache-hard-refresh</a></p>
+            <p class="muted">(Replace placeholders with your hosted URLs before App Store submission.)</p>
+        </details>
+    </section>
+</body>
+</html>

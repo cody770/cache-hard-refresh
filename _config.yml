@@ -1,0 +1,10 @@
+title: Cache Clear & Hard Refresh
+description: Safari Web Extension that clears the active site's data and hard-reloads.
+theme: jekyll-theme-minimal
+markdown: kramdown
+exclude:
+  - xcode/
+  - container/
+  - extension/
+  - apply-container.sh
+  - make_icons.py

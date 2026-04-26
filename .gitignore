@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Generated Xcode project — regenerated from extension/ and container/ via:
+#   safari-web-extension-converter ... && ./apply-container.sh
+xcode/
+
+# Xcode build artifacts (DerivedData lives outside the repo by default — guard anyway)
+build/
+DerivedData/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Editor/scratch
+*.swp
+.vscode/
+.idea/
