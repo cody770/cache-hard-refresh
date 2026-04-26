@@ -44,7 +44,7 @@ None. There is no data to share.
 
 ## Source code
 
-The extension's source code is publicly available so you can verify these claims yourself: [link to repository].
+The extension's source code is publicly available so you can verify these claims yourself: <https://github.com/cody770/cache-hard-refresh>
 
 ## Contact
 
