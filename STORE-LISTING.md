@@ -12,17 +12,9 @@ That single answer skips the entire questionnaire. It is honest because the exte
 
 ## Privacy Policy URL (required)
 
-Apple requires a working URL. Host `PRIVACY.md` somewhere public and put that URL here. Easiest options:
+Live at: **https://cody770.github.io/cache-hard-refresh/PRIVACY**
 
-- GitHub Pages: push this repo, enable Pages, render `PRIVACY.md` → `https://USER.github.io/REPO/PRIVACY` (or `/privacy`)
-- Personal site: drop the rendered HTML at `https://yourdomain/cache-hard-refresh/privacy`
-- A Gist: less professional but Apple accepts it
-
-After picking a URL, update three places to match:
-1. App Store Connect → App Privacy → Privacy Policy URL
-2. `container/Main.html` (the two `data-external` links currently pointing at `example.com`)
-3. `PRIVACY.md` "Source code" link
-Then run `./apply-container.sh` and rebuild.
+This is what goes in App Store Connect → App Information → Privacy Policy URL. The page is rendered from `PRIVACY.md` at the repo root via GitHub Pages with the minimal Jekyll theme (`_config.yml`). To regenerate after edits: commit + push to `main`, Pages rebuilds automatically (~1 min).
 
 ## Description (suggested)
 
