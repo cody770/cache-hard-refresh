@@ -21,6 +21,10 @@ The "all websites" permission Safari requests is a platform constraint — the W
 
 Full privacy policy: [PRIVACY.md](PRIVACY.md)
 
+## Trying it out
+
+If you just want to install and use it (no paid Apple Developer account needed), see [TESTERS.md](TESTERS.md) for a step-by-step install guide using a free Apple ID. If you have Claude Code, point it at [TESTERS-CLAUDE.md](TESTERS-CLAUDE.md) and it can run most of the setup for you.
+
 ## Building
 
 Requires macOS with Xcode installed.

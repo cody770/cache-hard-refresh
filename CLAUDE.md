@@ -65,6 +65,10 @@ open "xcode/Cache Hard Refresh/Cache Hard Refresh.xcodeproj"
 
 `PRIVACY.md` is the privacy policy text — must be hosted at a public URL before submission. `STORE-LISTING.md` is the playbook for the App Store Connect form (App Privacy answer is "Data Not Collected", description copy, App Review notes pre-empting the broad host-permission concern, etc.). The `data-external` placeholder URLs in `container/Main.html` need updating to the real hosted URLs and `apply-container.sh` re-run before submission.
 
+## Tester onboarding (pre-store)
+
+For people who want to install before App Store release: `TESTERS.md` walks a non-developer through clone-build with a free Apple ID (no paid Developer account). `TESTERS-CLAUDE.md` briefs a tester's Claude Code on which steps it can run vs. which require GUI interaction. Do not delete or restructure these without thinking about testers mid-install.
+
 ## Known converter quirks
 
 **Bundle ID mismatch on every re-run.** The converter sets the parent app's `PRODUCT_BUNDLE_IDENTIFIER` from the *app name* (→ `com.timmclay.Cache-Hard-Refresh`) but the extension target from `--bundle-identifier` (→ `com.timmclay.cachehardrefresh.Extension`). The extension's bundle ID must be prefixed with the parent app's, so the build fails with *"Embedded binary's bundle identifier is not prefixed with the parent app's bundle identifier"*. Fix after every re-run:
